@@ -1,0 +1,5 @@
+build-essential
+autoconf
+libtool
+pkg-config
+python3-dev
