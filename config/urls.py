@@ -16,6 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from nfts.views import ProjectDetailView
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('projects/<int:pk>/', ProjectDetailView.as_view(), name='project_details'),
 ]
